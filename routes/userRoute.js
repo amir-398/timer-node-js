@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const userController = require("../controllers/userController.js");
+
 const jwtMiddleware = require("../middlewares/jwtMiddleware.js");
 
 // Route pour l'ajoute d'un utilisateur
