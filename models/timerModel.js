@@ -10,8 +10,5 @@ let userSchema = new Schema({
     type: String,
     required: true,
   },
-  created_at: {
-    type: Date,
-  },
 });
 module.exports = mongoose.model("Timer", userSchema);
