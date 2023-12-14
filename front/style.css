@@ -1,0 +1,41 @@
+body {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+body,
+html {
+  height: 100%;
+  font-family: sans-serif;
+  overflow: hidden;
+}
+.f1-lights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  width: 60%;
+  height: 60%;
+}
+.light-strip {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  gap: 10px;
+  width: 10%;
+  height: 100%;
+  background-color: #000;
+  border-radius: 30px;
+  padding: 1rem;
+}
+.light {
+  width: 100%;
+  height: calc(100% / 4);
+  background-color: grey;
+  border-radius: 50%;
+}
+.light-on {
+  background-color: red;
+}
