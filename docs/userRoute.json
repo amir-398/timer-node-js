@@ -1,0 +1,44 @@
+{
+  "/users/{user_id}/timer": {
+    "post": {
+      "summary": "Ajoute un timer pour un utilisateur",
+      "description": "Enregistre un nouvel enregistrement de temps pour l'utilisateur spécifié",
+      "parameters": [
+        {
+          "in": "path",
+          "name": "user_id",
+          "required": true,
+          "description": "ID de l'utilisateur",
+          "schema": {
+            "type": "string"
+          }
+        }
+      ],
+      "requestBody": {
+        "required": true,
+        "content": {
+          "application/json": {
+            "schema": {
+              "type": "object",
+              "properties": {
+                "time": {
+                  "type": "string",
+                  "format": "date-time",
+                  "description": "Le temps à enregistrer"
+                }
+              }
+            }
+          }
+        }
+      },
+      "responses": {
+        "201": {
+          "description": "Timer créé avec succès"
+        },
+        "400": {
+          "description": "Requête invalide"
+        }
+      }
+    }
+  }
+}

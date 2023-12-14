@@ -77,8 +77,6 @@ exports.deleteUser = async (req, res) => {
 };
 
 // update user
-// ... autres imports et fonctions ...
-
 exports.updateUser = async (req, res) => {
   try {
     const userId = req.params.id; // L'identifiant de l'utilisateur à mettre à jour
